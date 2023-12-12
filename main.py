@@ -28,5 +28,5 @@ def generate(text, **kwargs):
 # print(generate(f'simplify | {text}', max_length=200, length_penalty=3, no_repeat_ngram_size=3))
 
 if button:
-    result = generate(f'simplify | {text}', max_length=300, length_penalty=3, no_repeat_ngram_size=3)
+    result = generate(f'simplify | {text}', min_length=300, max_length=1024, length_penalty=3, no_repeat_ngram_size=3)
     st.write(result)
